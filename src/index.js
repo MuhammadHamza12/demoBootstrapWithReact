@@ -6,6 +6,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router} from 'react-router-dom';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import 'jquery';
+import "../node_modules/bootstrap/dist/js/bootstrap";
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import '../src/Assets/css/app.css';
 import configureStore from './Store/configureStore';

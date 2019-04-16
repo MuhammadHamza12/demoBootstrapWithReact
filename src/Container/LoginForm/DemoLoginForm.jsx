@@ -17,8 +17,8 @@ export default class DemoLoginForm extends Component {
       [e.target.name]:e.target.value,
     })
   }
+
   isValid = () => {
-    
     const { errors, isValid } = Validator(this.state, 'loginPageValidation');
     if (!isValid) {
       this.setState({
@@ -27,13 +27,15 @@ export default class DemoLoginForm extends Component {
     }
     return isValid;
   }
+
    isEmpty = (obj) => {
     for(var key in obj) {
         if(obj.hasOwnProperty(key))
             return false;
     }
     return true;
-}
+  }
+
   onHandleSubmit = (e) => {
     e.preventDefault();
     if (this.isValid()) {
@@ -45,12 +47,13 @@ export default class DemoLoginForm extends Component {
       })
     }
   }
+
   render() {
     const { errors } = this.state;
     console.log(errors);
     return (
       <React.Fragment>
-        <div style={{background:'white',padding:40,borderRadius:8}} >
+        <div style={{padding:40,borderRadius:8}} >
 
         <form onSubmit={this.onHandleSubmit} noValidate>
             <div style={{display:'flex',flexDirection:'row',flexWrap:'wrap'}}>
@@ -94,9 +97,12 @@ export default class DemoLoginForm extends Component {
                 Forget password ? 
               </div>
             </div>
-            <div style={{paddingTop:20}} >
+            <div style={{paddingTop:20,textAlign:'left'}} >
 
-          <button style={{borderRadius:30}} type="submit" class="btn btn-success btn-lg">Login</button>
+          <button style={{borderRadius:30}} type="submit" class="btn btn-success btn-lg">
+          
+          Login
+          </button>
             </div>
            </div>
             </div>

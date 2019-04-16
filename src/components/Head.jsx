@@ -57,7 +57,7 @@ class Head extends Component {
                     System's
                         
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle style={{background:'lightgrey'}} aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">          
                         </Nav>

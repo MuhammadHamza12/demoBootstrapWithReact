@@ -7,3 +7,7 @@ input:-webkit-autofill:active  {
 body{
   font-family: 'Titillium Web', sans-serif;
 }
+.mainBackColor {
+  background: linear-gradient(left top, #ffffff 0%,#e1e1e1 25%,#f1f1f1 49%,#e1e1e1 77%,#f6f6f6 100%);
+}
+
